@@ -1,4 +1,4 @@
-Homework 1: Python and Github Practice
+Homework 01: Python and Github Practice
 ================
 **Description**
 
