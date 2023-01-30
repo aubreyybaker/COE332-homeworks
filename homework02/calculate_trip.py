@@ -36,7 +36,6 @@ def count_classes(a_list_of_dicts: List[dict], a_key_string: str):
     return(classes_observed)
 
 num_of_classes = count_classes(site_data['sites'], 'site_id')
-print(len(num_of_classes))
 
 for i in range(len(num_of_classes)):
     latitude_2 = site_data['sites'][i]['latitude']
