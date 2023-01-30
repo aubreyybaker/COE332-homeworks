@@ -50,7 +50,7 @@ for i in range(len(num_of_classes)):
 
     elapsedTime += sampleTime
 
-    print('leg = ', i+1, ', time to travel = ', travelTime, ', time to sample = ', sampleTime,'hr',sep = '')
+    print('leg = ', i+1, ', time to travel = ', travelTime, ', time to sample = ', sampleTime,' hr',sep = '')
 
 print('===============================')
 print('number of legs = ', i+1, ', total time elapsed = ', elapsedTime, ' hr', sep = '')
