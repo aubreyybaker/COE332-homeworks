@@ -8,7 +8,7 @@ import json
 landSite = {} #dict
 landSite['sites'] = []
 
-def createLandingSite(numSites, landSite):
+def createLandingSite(numSites: int, landSite):
     compList = ["stony", "iron", "stony-iron"]
     northDeg = round(float(random.uniform(16.0,18.0)),1)
     eastDeg = round(float(random.uniform(82.0,84.0)),1)
@@ -20,5 +20,5 @@ for numSites in range(5):
     data = createLandingSite(numSites+1, landSite)
 
 print(data)
-with open('sites.json', 'w') as out:
+with open('meteoriteSites.json', 'w') as out:
     json.dump(data, out, indent=2)
