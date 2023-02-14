@@ -70,11 +70,12 @@ Call the ``pytest`` executable in your top directory, it will find the test func
 
 ```bash
 ==================================== test session starts ====================================
-platform linux -- Python 3.6.8, pytest-7.0.0, pluggy-1.0.0
-rootdir: /home/wallen/coe-332/code-organization
-collected 1 item
+platform linux -- Python 3.8.10, pytest-7.2.1, pluggy-1.0.0
+rootdir: /home/alb6443/coe332/homeworks/homework03
+collected 2 items                                                              
 
-test_ml_data_analysis.py .                                                            [100%]
+test_analyze_water.py ..                                                 [100%]
 
-===================================== 1 passed in 0.01s =====================================
+============================== 2 passed in 0.07s ===============================
+
 ```
