@@ -47,16 +47,17 @@ This code has two scripts: ``analyze_water.py`` and ``test_analyze_water.py``
 
 **``analyze_water.py``**: Determines whether or not the 5 most recent water sample average turbidity is safe or a hazard. The script calculates turbidity in NTU units (0-40). In addition, it calculates the minimum number of hours required to fall below the safe threshold turbidity of 1.0 NTU. When the script is run, a summary of the whole trip will look similar to:
 
-```bash
-Average turbidity based on most recent five measurements = 1.1992 NTU
-Warning: Turbidity is above threshold for safe use
-Minimum time required to return below a safe threshold = 8.99 hours
-```
+.. code-block:: text
 
-```bash
-Average turbidity based on most recent five measurements = 0.9852 NTU
-Info: Turbidity is below threshold for safe use
-Minimum time required to return below a safe threshold = 0 hours
+   Average turbidity based on most recent five measurements = 1.1992 NTU
+   Warning: Turbidity is above threshold for safe use
+   Minimum time required to return below a safe threshold = 8.99 hours
+
+.. code-block:: text
+
+   Average turbidity based on most recent five measurements = 0.9852 NTU
+   Info: Turbidity is below threshold for safe use
+   Minimum time required to return below a safe threshold = 0 hoursum time required to return below a safe threshold = 0 hours
 ```
 
 **``test_analyze_water.py``**: This script is designed to test the ``turbitityCalculation`` and ``turbThreshold`` functions within  ``analyze_water.py``. This demonstrates that the functions work as they are expected to. The script asserts the functions by passing hand-crafted data that results in an already-known answer for both functions. 
