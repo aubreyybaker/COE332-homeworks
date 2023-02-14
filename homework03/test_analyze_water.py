@@ -5,4 +5,4 @@ def test_turbitityCalculation():
     assert turbitityCalculation(2, 3) == 7
 
 def test_turbThreshold():
-    assert test_turbThreshold(2, 1.96) == 1
+    assert turbThreshold(2, 1.96) == 1

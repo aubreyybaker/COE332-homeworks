@@ -59,11 +59,14 @@ def main():
     
     if (T0>Ts):
         print('Warning: Turbidity is above threshold for safe use')
+        b = round(turbThreshold(T0,Ts),4)
+        print('Minimum time required to return below a safe threshold = ', b, ' hours')
+
     else:
         print('Info: Turbidity is below threshold for safe use')
+        print('Minimum time required to return below a safe threshold = 0 hours')
+
     
-    b = round(turbThreshold(T0,Ts),4)
-    print('Minimum time required to return below a safe threshold = ', b, ' hours')
 
 if __name__ == '__main__':
     main()
