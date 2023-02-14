@@ -66,8 +66,6 @@ def main():
         print('Info: Turbidity is below threshold for safe use')
         print('Minimum time required to return below a safe threshold = 0 hours')
 
-    
-
 if __name__ == '__main__':
     main()
 
