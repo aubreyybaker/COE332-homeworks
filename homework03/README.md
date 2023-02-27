@@ -47,13 +47,13 @@ This code has two scripts: ``analyze_water.py`` and ``test_analyze_water.py``
 
 **``analyze_water.py``**: Determines whether or not the 5 most recent water sample average turbidity is safe or a hazard. The script calculates turbidity in NTU units (0-40). In addition, it calculates the minimum number of hours required to fall below the safe threshold turbidity of 1.0 NTU. When the script is run, a summary of the whole trip will look similar to:
 
-```bash
+```
 Average turbidity based on most recent five measurements = 1.1992 NTU
 Warning: Turbidity is above threshold for safe use
 Minimum time required to return below a safe threshold = 8.99 hours
 ```
 
-```bash
+```
 Average turbidity based on most recent five measurements = 0.9852 NTU
 Info: Turbidity is below threshold for safe use
 Minimum time required to return below a safe threshold = 0 hours
@@ -70,11 +70,12 @@ Call the ``pytest`` executable in your top directory, it will find the test func
 
 ```bash
 ==================================== test session starts ====================================
-platform linux -- Python 3.6.8, pytest-7.0.0, pluggy-1.0.0
-rootdir: /home/wallen/coe-332/code-organization
-collected 1 item
+platform linux -- Python 3.8.10, pytest-7.2.1, pluggy-1.0.0
+rootdir: /home/alb6443/coe332/homeworks/homework03
+collected 2 items                                                              
 
-test_ml_data_analysis.py .                                                            [100%]
+test_analyze_water.py ..                                                 [100%]
 
-===================================== 1 passed in 0.01s =====================================
+============================== 2 passed in 0.07s ===============================
+
 ```
