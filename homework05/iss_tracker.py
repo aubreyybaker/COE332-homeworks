@@ -16,7 +16,7 @@ def getData()-> List[dict]:
         N/A
 
     Returns:
-        Data (dict): Positional and velocity data for the International Space Station (ISS)
+        N/A
     """
     url='https://nasa-public-data.s3.amazonaws.com/iss-coords/current/ISS_OEM/ISS.OEM_J2K_EPH.xml'
     response = requests.get(url)
@@ -31,7 +31,7 @@ def showData() -> List[dict]:
     Args:
         N/A
     Returns:
-        getData (dict): Returns all data within the data set from the NASA ISS trajectory data as a list of dictionaries
+        data (dict): Returns all data within the data set from the NASA ISS trajectory data as a list of dictionaries
     """
     if not bool(data):
         return 'Data has been cleared.\n'
